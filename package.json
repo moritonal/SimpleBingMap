@@ -1,6 +1,6 @@
 {
   "name": "simplebingmap",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple way to add BingMaps to your project",
   "browser": "./dist/SimpleBingMap.js",
   "types":"./dist/SimpleBingMap.d.ts",
@@ -16,7 +16,8 @@
     "BingMaps"
   ],
   "files":[
-    "dist"
+    "dist",
+    "src"
   ],
   "author": "Tom Bonner",
   "license": "Apache-2.0",

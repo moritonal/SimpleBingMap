@@ -54,6 +54,39 @@ export default class SimpleBingMap {
 		return pushpin;
 	}
 
+	setCenter(latitude : number, longitude : number) {
+
+		if (!this.Map) {
+			throw "Map not initialised";
+		}
+
+		this.Map.setView({
+			center: new Microsoft.Maps.Location(latitude, longitude)
+		} as Microsoft.Maps.IViewOptions);
+	}
+
+	setMode(mode : Microsoft.Maps.MapTypeId) {
+
+		if (!this.Map) {
+			throw "Map not initialised";
+		}
+
+		this.Map.setView({
+			mapTypeId: mode
+		} as Microsoft.Maps.IViewOptions);
+	}
+
+	setZoom(zoom : number) {
+
+		if (!this.Map) {
+			throw "Map not initialised";
+		}
+
+		this.Map.setView({
+			zoom: zoom
+		} as Microsoft.Maps.IViewOptions);
+	}
+
 	onInit(args : IArgs) {
 		
 		const ourElem = args.element || document.getElementById("myMap");
