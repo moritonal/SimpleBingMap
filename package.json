@@ -1,9 +1,9 @@
 {
   "name": "simplebingmap",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simple way to add BingMaps to your project",
-  "main": "dist/index.js",
-  "types":"dist/index.d.ts",
+  "browser": "./dist/index.js",
+  "types":"./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
